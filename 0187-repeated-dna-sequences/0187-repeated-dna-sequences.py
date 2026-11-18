@@ -4,11 +4,13 @@ class Solution:
         j=10
         store=set()
         res=set()
-        while j<=len(s):
-            if s[i:j] not in store:
-                store.add(s[i:j])
+        n=len(s)
+        while j<=n:
+            seq=s[i:j]
+            if seq not in store:
+                store.add(seq)
             else:
-                res.add(s[i:j])
+                res.add(seq)
             i+=1
             j+=1
 
